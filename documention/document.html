@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+			}
+			:root {
+				scroll-behavior: smooth;
+				--main-color: #142b36;
+			}
+			body {
+				font-family: emoji;
+				background-image: url(../img/011.jpg);
+				background-attachment: fixed;
+				background-position: center center;
+			}
+			@media (min-width: 768px) {
+				.container {
+					width: 750px;
+				}
+			}
+			@media (min-width: 992px) {
+				.container {
+					width: 970px;
+				}
+			}
+			@media (min-width: 1200px) {
+				.container {
+					width: 1170px;
+				}
+			}
+			.container {
+				padding-left: 15px;
+				padding-right: 15px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			a {
+				text-decoration: none;
+			}
+			.main-boox .container .booxs {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+				grid-gap: 20px;
+				justify-content: center;
+				margin: 10px;
+				justify-items: center;
+			}
+			/* .main-boox {
+				height: 500px;
+			} */
+			.main-boox .booxs h1,
+			.btn a span {
+				width: 300px;
+				height: 150px;
+				border-radius: 6px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-transform: uppercase;
+				color: white;
+				background-image: linear-gradient(#d40b0b, #000);
+				transition: 0.5s;
+				cursor: pointer;
+				letter-spacing: 5px;
+				opacity: 70%;
+			}
+			.btn a span {
+				letter-spacing: 1px;
+			}
+			.main-boox .booxs h1:hover,
+			.btn a span:hover {
+				width: 305px;
+				height: 155px;
+				z-index: 99;
+				opacity: 100%;
+				box-shadow: 0px 0px 4px 1px #d5b8b873;
+			}
+			.btn {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+				justify-items: center;
+			}
+			.btn a {
+				animation: btn infinite alternate;
+			}
+			p {
+				margin: 40px 20px;
+				text-align: center;
+				font-size: 30px;
+				color: rgb(255, 255, 255);
+				letter-spacing: 3px;
+				text-transform: capitalize;
+			}
+			@keyframes btn {
+				0% {
+					rotate: 180deg;
+				}
+				50% {
+					rotate: 360deg;
+				}
+				100% {
+					rotate: 0deg;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main-boox">
+			<div class="container">
+				<p>programing with.</p>
+				<div class="booxs">
+					<h1>html5</h1>
+					<h1>css3</h1>
+					<h1>javascript</h1>
+					<h1>jqurey</h1>
+					<h1>bootstrap</h1>
+					<h1>php</h1>
+				</div>
+				<p>viset web site form button.</p>
+				<div class="btn">
+					<a href="../index.html"
+						><span
+							style="
+								border-radius: 10%;
+								height: 50px;
+								width: 50px;
+								opacity: 100% !important;
+							"
+							>en</span
+						></a
+					>
+					<a href="../index-rtl.html"
+						><span
+							style="
+								border-radius: 10%;
+								height: 50px;
+								width: 50px;
+								opacity: 100% !important;
+							"
+							>AR</span
+						></a
+					>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
